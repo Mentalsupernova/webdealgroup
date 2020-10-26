@@ -20,7 +20,7 @@ class auth extends aModule{
 				//echo "<pre >"; print_r($u); echo "</pre>"; //die();
 
 				$usersList=rows("SELECT * FROM mypizza_users WHERE email LIKE '".$u->email."' ");
-				
+
 				if(count($usersList)==1)
 				{
 				    $user = $usersList[0];
@@ -30,10 +30,10 @@ class auth extends aModule{
 				{
 				    $user['role']="guest";
 				    $user['email']=$user->email;
-				}            
+				}
 			}
 			else if (!empty($arr['user_login']) && !empty($arr['password']))//|| $arr['verified_email'] == 1)
-			{   
+			{
 
 				//echo "ok";
 
@@ -49,7 +49,7 @@ class auth extends aModule{
 					{
 						$phone = noSQL($arr['user_login']);
 					}
-					
+
 					if (strlen($arr['user_login'])>0)
 					{
 						$email = noSQL($arr['user_login']);
@@ -61,7 +61,7 @@ class auth extends aModule{
 					}
 
 					//echo $login;
-					
+
 					$where = "";
 					if(strlen($arr['password'])>0 && strlen($phone)>0) { $where .= "(pass LIKE '".md5($arr['password'])."' AND	phone LIKE '".$phone."')";}
 					if(strlen($arr['password'])>0 && strlen($email)>0) { if (strlen($where)>0) {$where .= " OR ";} $where .= "(pass LIKE '".md5($arr['password'])."' AND	email LIKE '".$email."')";}
@@ -81,9 +81,9 @@ class auth extends aModule{
 				{
 				    $user = $List[0];
 				    $user['role'] = "user";
-				}            
+				}
 			}
-			
+
 		}
 		else
 		{
@@ -93,12 +93,12 @@ class auth extends aModule{
 
 		if(isset($user['Id']) && strlen($user['Id']) >0)
 		{
-			$r = $this->get_data('Get_discount', array( 
+			$r = $this->get_data('Get_discount', array(
 				$user['Id']
 			));
 			$user['discount'] = $r[0];
 
-			$user['addresses'] = $this->get_data('User_addresses', array( 
+			$user['addresses'] = $this->get_data('User_addresses', array(
 				$user['Id']
 			));
 
@@ -121,7 +121,7 @@ class auth extends aModule{
 			/*
 			if(isset($_SESSION['cart']) && count($_SESSION['cart'][items])>0) // если в корзине до логина что-то было
 			{
-				
+
 				//echo "ok";
 
 				if(count($r)>0) // при присутствии в таблице update
@@ -131,18 +131,18 @@ class auth extends aModule{
 				else  // при отсутствии в таблице insert
 				{
 					q("INSERT INTO _cart_sessions (id_user, session) VALUE (".$user['Id'].",'".json_encode($_SESSION['cart'])."')");
-				}					
+				}
 			}
 			else  // если ничего не было
 			{
 				if(count($r)>0) // и в таблице что-то было, то в сессию пишем из таблицы
 				{
 					$_SESSION['cart'] = json_decode($r[0]['session'], true);
-				}				
+				}
 			}
 			*/
 
-			
+
 		}
 
 
