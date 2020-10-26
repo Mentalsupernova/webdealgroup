@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-25 17:01:00
+<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
          compiled from tpl/pricingSection.tpl */ ?>
   <div class="decor decor-container parallax-scene-js">
           <div class="decor__element decor__element_8" data-parallax-scroll="{&quot;y&quot;: 200,  &quot;smoothness&quot;: 150}"><img src="images/decor-img-08-1777x1070.png" alt="" width="1777" height="1070"/>

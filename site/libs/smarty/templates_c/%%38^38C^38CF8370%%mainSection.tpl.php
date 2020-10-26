@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-25 17:01:00
+<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
          compiled from tpl/mainSection.tpl */ ?>
   <div class="morph-bg"><img src="images/bg-morph-1920x1050.png" alt="" width="1920" height="1050"/>
         </div>
