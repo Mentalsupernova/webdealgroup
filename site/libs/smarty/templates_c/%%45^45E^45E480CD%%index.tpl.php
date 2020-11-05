@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from index.tpl */ ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
@@ -161,4 +161,4 @@ unset($_smarty_tpl_vars);
 	  })();</script>
 
   <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
-</html>
+</html>

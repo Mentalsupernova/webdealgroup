@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/portfolioSection.tpl */ ?>
 
   <div class="box-section"></div>
@@ -22,4 +22,4 @@
             <div class="item"><img src="images/owl-img-04-370x480.jpg" alt="" width="370" height="480"/>
             </div>
           </div><a class="button button-xl button-default-outline button-zakaria block-custom-6 wow fadeInUp" href="#" data-wow-delay=".4s">View all</a>
-        </div>
+        </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:54
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/getfreeSection.tpl */ ?>
 
   <div class="decor parallax-scene-js">
@@ -59,4 +59,4 @@
               </form>
             </div>
           </div>
-        </div>
+        </div>

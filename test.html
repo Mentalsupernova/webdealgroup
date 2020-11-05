@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="/js/CometServerApi.js" type="text/javascript"></script>
+<script src="/js/jquery.js"></script>
+
+<script src="/js/base64js.min.js"></script>
+<script src="/js/text-encoder-lite.min.js"></script>
+
+<style>
+    .grid{display:grid; grid-template-columns: 100px 100px auto 70px 50px;grid-gap: 100px; };
+    .orderId{grid-column:1 / 2;};
+    .orderStatus{grid-column:2 / 3;};
+    .orderMsg{grid-column:3 / 4;};
+    .orderAccept{grid-column:4 / 5;};
+    .orderReject{grid-column:5 / 6;};
+
+
+
+</style>
+<style>
+    .blink{
+        background: yellow;
+        -webkit-animation: blink2 1s linear infinite;
+        animation: blink2 1s linear infinite;
+    }
+    @-webkit-keyframes blink2 {
+        100% { background: yellow; }
+    }
+    @keyframes blink2 {
+        100% { background: white; }
+    }
+
+</style>
+
+
+<script type="text/javascript">
+
+    function Base64Encode(str, encoding = 'utf-8') {
+        var bytes = new (TextEncoder || TextEncoderLite)(encoding).encode(str);
+        return base64js.fromByteArray(bytes);
+    }
+
+    function Base64Decode(str, encoding = 'utf-8') {
+        var bytes = base64js.toByteArray(str);
+        return new (TextDecoder || TextDecoderLite)(encoding).decode(bytes);
+    }
+
+    function send_status(id,status) {
+        console.log("123");
+        //   var order ="{id:"+id +",status:"+ status+"}";
+        if(status==0){
+            $("#grid" + id).addClass('blink');
+        }
+
+        if(status==1){
+
+            $("#grid" + id).removeClass('blink');
+        }
+        var order = {
+            'id':id,
+            'status':status
+        };
+
+        $.ajax({
+            url: '/?mod_name=send_status',
+            type: "POST",
+            dataType:'json',
+            data:  order,
+            success: function(data) {
+                console.log("sended");
+            },
+            error: function(){
+                console.log('error!');
+            }
+
+        });
+
+    }
+
+
+
+
+
+
+    $(document).ready(function() {
+
+
+        CometServer().start({dev_id:0, node:"85.143.174.149"});
+
+
+        //Подписка на канал новых  заказов
+
+        CometServer().get_pipe_log("webtest");
+        CometServer().subscription("webtest", function (data) {
+            var str;
+            var obj;
+
+            str = data.data;
+            obj = JSON.parse(Base64Decode(str));
+           console.log(obj)
+
+    });
+    });
+
+
+</script>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

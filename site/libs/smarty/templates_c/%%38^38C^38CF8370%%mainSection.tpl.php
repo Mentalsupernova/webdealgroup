@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/mainSection.tpl */ ?>
   <div class="morph-bg"><img src="images/bg-morph-1920x1050.png" alt="" width="1920" height="1050"/>
         </div>
@@ -30,4 +30,4 @@
               <p class="block-custom-1 wow fadeInUp" data-wow-delay=".3s">Raise your online visibility with our search engine optimiza-<br class='d-none d-xxl-block'>tion services aimed at helping you succeed on the Web.</p><a class="button button-lg button-secondary button-zakaria wow fadeInUp" href="#" data-wow-delay=".5s">Get started</a>
             </div>
           </div>
-        </div>
+        </div>

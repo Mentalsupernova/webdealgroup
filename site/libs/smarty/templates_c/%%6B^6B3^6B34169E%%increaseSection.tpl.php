@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/increaseSection.tpl */ ?>
   <div class="decor decor-container parallax-scene-js">
           <div class="decor__element decor__element_6" data-parallax-scroll="{&quot;y&quot;: 200,  &quot;smoothness&quot;: 150}"><img src="images/decor-img-06-1908x1219.png" alt="" width="1908" height="1219"/>
@@ -21,4 +21,4 @@
             <div class="col-sm-10 col-md-5 text-center text-md-left wow fadeInRight" data-wow-delay=".3s"><img class="box-shadow-1" src="images/index-img-01-330x657.png" alt="" width="330" height="657"/>
             </div>
           </div>
-        </div>
+        </div>

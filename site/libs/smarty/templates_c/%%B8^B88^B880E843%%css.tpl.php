@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:53
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/css.tpl */ ?>
 <style>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
@@ -33,4 +33,4 @@ unset($_smarty_tpl_vars);
   z-index: 99999;
 }
 
-</style>
+</style>

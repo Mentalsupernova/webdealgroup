@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:54
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/testimailsSection.tpl */ ?>
   <div class="decor-2"><img src="images/decor-2-img-01-1423x1153.png" alt="" width="1423" height="1153"/>
         </div>
@@ -52,4 +52,4 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2020-10-26 12:32:54
+<?php /* Smarty version 2.6.11, created on 2020-11-05 09:23:17
          compiled from tpl/footer.tpl */ ?>
 
   <div class="container">
@@ -12,4 +12,4 @@
               <p class="rights wow fadeInUp" data-wow-delay=".1s"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>.&nbsp;</span><span>All Rights Reserved</span><span>.&nbsp;</span><a href="#">Privacy Policy</a></p>
             </div>
           </div>
-        </div>
+        </div>
